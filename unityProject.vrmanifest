@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.grouop4vrsetup.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\woelk\\Desktop\\Uni\\Year 2\\Block 2\\VIR2 Game Development #2\\Programming\\Group4-Blue\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Grouop4-VRSetUp [Testing]"
+        }
+      }
+    }
+  ]
+}
