@@ -455,8 +455,8 @@ namespace Valve.VR
 #if UNITY_URP
                     material = new Material(shader != null ? shader : Shader.Find("Universal Render Pipeline/Lit"));
 #else
-                    material = new Material(shader != null ? shader : Shader.Find("Standard"));
-                   //material = new Material(shader != null ? shader : Shader.Find("Lightweight Render Pipeline/Lit"));
+                    //material = new Material(shader != null ? shader : Shader.Find("Standard"));
+                    material = new Material(shader != null ? shader : Shader.Find("Lightweight Render Pipeline/Lit"));
 #endif
 
                     material.mainTexture = texture;
