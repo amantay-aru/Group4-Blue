@@ -62,11 +62,15 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            EndDialogue();
+            return;
+        }
+        if(sentences.Count == 1)
+        {
             option_1.SetActive(true);
             option_2.SetActive(true);
             option_3.SetActive(true);
             continueButton.SetActive(false);
-            return;
         }
 
         string sentence = sentences.Dequeue();
