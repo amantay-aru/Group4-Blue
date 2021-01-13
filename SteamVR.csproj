@@ -84,9 +84,16 @@
     <Compile Include="Assets\SteamVR\Input\SteamVR_ActionDirections.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_ActionSet.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_ActionSet_Manager.cs" />
+    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Boolean.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Action_In.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Out.cs" />
+    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Pose.cs" />
+    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Single.cs" />
+    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Skeleton.cs" />
+    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Vector2.cs" />
+    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Vector3.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Vibration.cs" />
+    <Compile Include="Assets\SteamVR\Input\SteamVR_ActivateActionSetOnLoad.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Behaviour_Boolean.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Behaviour_Pose.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Behaviour_Single.cs" />
@@ -159,6 +166,7 @@
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Unparent.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Util.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\VelocityEstimator.cs" />
+    <Compile Include="Assets\SteamVR\InteractionSystem\Hints\Scripts\ControllerButtonHints.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ArcheryTarget.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\Arrow.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ArrowHand.cs" />
@@ -210,6 +218,8 @@
     <Compile Include="Assets\SteamVR\OpenVRAutoUpdater\Editor\OpenVRAutoUpdater.cs" />
     <Compile Include="Assets\SteamVR\OpenVRAutoUpdater\Editor\OpenVRSimpleJSON.cs" />
     <Compile Include="Assets\SteamVR\OpenVRUnityXRPackage\Editor\OpenVRPackageInstaller.cs" />
+    <Compile Include="Assets\SteamVR\Plugins\openvr_api.cs" />
+    <Compile Include="Assets\SteamVR\Scripts\SteamVR.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Behaviour.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Camera.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_CameraFlip.cs" />
@@ -229,6 +239,7 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Render.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_RenderModel.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_RingBuffer.cs" />
+    <Compile Include="Assets\SteamVR\Scripts\SteamVR_Settings.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Skybox.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_SphericalProjection.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedCamera.cs" />
@@ -446,10 +457,10 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>C:/Users/woelk/Desktop/Uni/Year 2/Block 2/VIR2 Game Development #2/Programming/Group4-Blue/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:/Users/Аружан/Documents/GitHub/Group4-Blue/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>C:/Users/woelk/Desktop/Uni/Year 2/Block 2/VIR2 Game Development #2/Programming/Group4-Blue/Library/PackageCache/com.unity.render-pipelines.core@7.5.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+      <HintPath>C:/Users/Аружан/Documents/GitHub/Group4-Blue/Library/PackageCache/com.unity.render-pipelines.core@7.5.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.15f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -806,13 +817,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/woelk/Desktop/Uni/Year 2/Block 2/VIR2 Game Development #2/Programming/Group4-Blue/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/Аружан/Documents/GitHub/Group4-Blue/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/woelk/Desktop/Uni/Year 2/Block 2/VIR2 Game Development #2/Programming/Group4-Blue/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Аружан/Documents/GitHub/Group4-Blue/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/woelk/Desktop/Uni/Year 2/Block 2/VIR2 Game Development #2/Programming/Group4-Blue/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Аружан/Documents/GitHub/Group4-Blue/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

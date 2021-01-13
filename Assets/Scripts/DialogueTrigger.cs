@@ -24,4 +24,10 @@ public class DialogueTrigger : MonoBehaviour
         StartButton.SetActive(true);
         Pointer.SetActive(true);
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        StartButton.SetActive(false);
+        Pointer.SetActive(false);
+    }
 }
