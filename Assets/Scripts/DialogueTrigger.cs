@@ -5,15 +5,15 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+
     public GameObject StartButton = null;
     public GameObject Pointer = null;
 
-    public void Start()
+    void Start()
     {
         StartButton.SetActive(false);
         Pointer.SetActive(false);
     }
-
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
