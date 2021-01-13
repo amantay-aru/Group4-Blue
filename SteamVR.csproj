@@ -84,16 +84,9 @@
     <Compile Include="Assets\SteamVR\Input\SteamVR_ActionDirections.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_ActionSet.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_ActionSet_Manager.cs" />
-    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Boolean.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Action_In.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Out.cs" />
-    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Pose.cs" />
-    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Single.cs" />
-    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Skeleton.cs" />
-    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Vector2.cs" />
-    <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Vector3.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Vibration.cs" />
-    <Compile Include="Assets\SteamVR\Input\SteamVR_ActivateActionSetOnLoad.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Behaviour_Boolean.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Behaviour_Pose.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Behaviour_Single.cs" />
@@ -166,7 +159,6 @@
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Unparent.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Util.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\VelocityEstimator.cs" />
-    <Compile Include="Assets\SteamVR\InteractionSystem\Hints\Scripts\ControllerButtonHints.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ArcheryTarget.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\Arrow.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ArrowHand.cs" />
@@ -217,8 +209,7 @@
     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportURPHelper.cs" />
     <Compile Include="Assets\SteamVR\OpenVRAutoUpdater\Editor\OpenVRAutoUpdater.cs" />
     <Compile Include="Assets\SteamVR\OpenVRAutoUpdater\Editor\OpenVRSimpleJSON.cs" />
-    <Compile Include="Assets\SteamVR\Plugins\openvr_api.cs" />
-    <Compile Include="Assets\SteamVR\Scripts\SteamVR.cs" />
+    <Compile Include="Assets\SteamVR\OpenVRUnityXRPackage\Editor\OpenVRPackageInstaller.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Behaviour.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Camera.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_CameraFlip.cs" />
@@ -238,7 +229,6 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Render.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_RenderModel.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_RingBuffer.cs" />
-    <Compile Include="Assets\SteamVR\Scripts\SteamVR_Settings.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Skybox.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_SphericalProjection.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedCamera.cs" />
