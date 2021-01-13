@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject option_1 = null;
     public GameObject option_2 = null;
     public GameObject option_3 = null;
+
     
 
     void Start()
@@ -46,28 +47,33 @@ public class DialogueManager : MonoBehaviour
             {
             sentences.Enqueue(sentence);
         }
+       
+        option_1.GetComponentInChildren<TMP_Text>().text = dialogue.options[0];
+        option_2.GetComponentInChildren<TMP_Text>().text = dialogue.options[1];
+        option_3.GetComponentInChildren<TMP_Text>().text = dialogue.options[2];
+        
+
+
 
         DisplaynextSentence();
     }
 
     public void DisplaynextSentence()
     {
+        if (sentences.Count == 0)
+        {
+            option_1.SetActive(true);
+            option_2.SetActive(true);
+            option_3.SetActive(true);
+            continueButton.SetActive(false);
+            return;
+        }
+
         string sentence = sentences.Dequeue();
         dialogueText.text = sentence;
 
-        if (sentences.Count == 0)
-        {
-            continueButton.SetActive(false);
-            ShowOptions();
-            return;
-        }
     }
 
-    public void ShowOptions()
-    {
-        option_1.SetActive(true);
-        option_1.GetComponentInChildren<TMP_Text>().text = "New";
-    }
 
 
     public void EndDialogue()
